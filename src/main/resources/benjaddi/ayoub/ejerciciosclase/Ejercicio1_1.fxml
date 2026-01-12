@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="benjaddi.ayoub.ejerciciosclase.TableView1.Ejercicio1_1Controller">
+    <children>
+      <Button layoutX="14.0" layoutY="289.0" mnemonicParsing="false" onAction="agregarPersona" prefHeight="25.0" prefWidth="149.0" text="Agregar Persona" />
+      <Label layoutX="14.0" layoutY="43.0" prefHeight="25.0" prefWidth="95.0" text="Nombre" />
+      <TextField layoutX="14.0" layoutY="84.0" />
+      <TextField layoutX="14.0" layoutY="159.0" />
+      <Label layoutX="14.0" layoutY="124.0" prefHeight="25.0" prefWidth="70.0" text="Apellidos" />
+      <Label layoutX="14.0" layoutY="200.0" prefHeight="25.0" prefWidth="52.0" text="Edad" />
+      <TextField layoutX="14.0" layoutY="232.0" prefHeight="25.0" prefWidth="149.0" />
+      <Button layoutX="232.0" layoutY="340.0" mnemonicParsing="false" onAction="modificar" prefHeight="25.0" prefWidth="137.0" text="Modificar" />
+      <Button layoutX="409.0" layoutY="340.0" mnemonicParsing="false" onAction="eliminar" prefHeight="25.0" prefWidth="137.0" text="Eliminar" />
+      <TableView layoutX="210.0" layoutY="28.0" prefHeight="292.0" prefWidth="375.0">
+        <columns>
+          <TableColumn prefWidth="112.0" text="Nombre" />
+          <TableColumn prefWidth="133.0" text="Apellidos" />
+            <TableColumn prefWidth="119.0" text="Edad" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
