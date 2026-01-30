@@ -14,15 +14,16 @@ import java.io.IOException;
 public class App extends Application {
 
     private static Scene scene;
-
+                
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("Ejercicio1_1"), 640, 480);
+        FXMLLoader fmx=new FXMLLoader(App.class.getResource("/fxml/tableView.fxml"));
+        scene = new Scene(fmx.load(), 300, 400);
         stage.setScene(scene);
         stage.show();
     }
 
-    static void setRoot(String fxml) throws IOException {
+    static void setRoot(String fxml) throws IOException { 
         scene.setRoot(loadFXML(fxml));
     }
 
